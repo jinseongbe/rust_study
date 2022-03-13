@@ -4,7 +4,7 @@ pub fn integer_print() {
   // rust는 다른 타입간의 연산을 하용하지 않음 : ex) i8과 u16은 연산 안됨 -> 에러
   // 그럴땐 casting을 하면 됨
   let num1: u16 = 8;
-  let num2: u8 = 10;
+  let num2: u8 = 10; // 다음표기로도 사용 가능 let num2 = 10u8;, let num = 10_u8, 언더바는 무시되니 자유롭게 사용 가능
   let num3 = num1 + num2 as u16; // num2를 u16로 casting 하여 연산한다.
   println!("{}, {}, {}", num1, num2, num3);
 
